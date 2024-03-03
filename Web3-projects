@@ -1,0 +1,31 @@
+install node.js and npm
+
+npm init -y
+
+npm install web3
+
+mkdir my-web3-project
+cd my-web3-project
+
+// app.js
+
+const Web3 = require('web3');
+
+// Connect to the Ethereum network using Infura
+const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID'));
+
+// Example: Get the latest block number
+web3.eth.getBlockNumber().then(console.log).catch(console.error);
+
+git init
+
+# My Web3 Project
+
+This is a basic example of a Web3 project using Node.js and Web3.js to interact with the Ethereum blockchain.
+
+git add .
+git commit -m "Initial commit"
+
+git remote add origin <repository-url>
+git branch -M main
+git push -u origin main
